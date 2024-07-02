@@ -1,10 +1,15 @@
 package org.example;
 
-import static com.almasb.fxgl.app.GameApplication.launch;
+import com.almasb.fxgl.app.GameApplication;
+import com.almasb.fxgl.app.GameSettings;
 
-public class Main {
+public class Main extends GameApplication {
     public static void main(String[] args) {
-
         launch(args);
+    }
+
+    @Override
+    protected void initSettings(GameSettings settings) {
+        // Configure game settings here
     }
 }
